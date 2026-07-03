@@ -53,7 +53,7 @@ jobs:
       - name: Build Code
         run: npm run build
   deploy: 
-    needs: builds
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Download Artifacts
